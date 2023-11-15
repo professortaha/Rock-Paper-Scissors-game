@@ -20,4 +20,6 @@ else:
     result = "You lose!"
 
 #print result
+print('Your choice: '+ user)
+print('Your choice: '+ computer)
 print(result)
