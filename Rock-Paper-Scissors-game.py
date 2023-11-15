@@ -1,5 +1,14 @@
 #Get player choice
-user = input("Choose Rock, Paper, or Scissors: ")
+def get_user_choice():
+    while True:
+        user = input("Choose Rock, Paper, or Scissors: ").capitalize()
+        if user in ["Rock", "Paper", "Scissors"]:
+            return user
+        else:
+            print("Invalid choice. Please choose Rock, Paper, or Scissors.")
+
+# Get player choice with validation
+user = get_user_choice()
 
 #Generate Computer Choice
 import random
@@ -20,6 +29,6 @@ else:
     result = "You lose!"
 
 #print result
-print('Your choice: '+ user)
-print('Your choice: '+ computer)
+print(f'Your choice: {user}')
+print(f'Computer choice: {computer}')
 print(result)
