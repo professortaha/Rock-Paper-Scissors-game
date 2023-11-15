@@ -18,3 +18,6 @@ elif (
     result = "You win!"
 else:
     result = "You lose!"
+
+#print result
+print(result)
